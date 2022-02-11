@@ -54,9 +54,9 @@ namespace ConsoleApp
             return new string(number.ToCharArray().Reverse().ToArray());
         }
 
-        public static void Convert(string number1, int system_base1, int system_base2)
+        public static string Convert(string number, int system_base1, int system_base2)
         {
-
+            return To_N_system(To_Decimal(number, system_base1), system_base2);
         }
     }
 }
