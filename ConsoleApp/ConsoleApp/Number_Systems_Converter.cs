@@ -25,7 +25,7 @@ namespace ConsoleApp
             return array;
         }
 
-        public static int From_N_to_Decimal(string number, int system_base)
+        private static int To_Decimal(string number, int system_base)
         {
             int decimal_number = 0;
             for(int i = 0; i < Number_To_Array(number).Length; i++)
@@ -35,9 +35,28 @@ namespace ConsoleApp
             return decimal_number;
         }
 
+        private static string To_N_system(int decimal_number, int system_base)
+        {
+            string number = "";
+            while(decimal_number > 0)
+            {
+                if(decimal_number%system_base < 10)
+                {
+                    number += (decimal_number % system_base).ToString();
+                }
+                else if(decimal_number%system_base > 10 && decimal_number % system_base < 'Z' - 'A' + 10)
+                {
+                    number += (char)((decimal_number % system_base) + 'A' - 10);
+                }
+                decimal_number /= system_base;
+                
+            }
+            return new string(number.ToCharArray().Reverse().ToArray());
+        }
+
         public static void Convert(string number1, int system_base1, int system_base2)
         {
-            
+
         }
     }
 }
