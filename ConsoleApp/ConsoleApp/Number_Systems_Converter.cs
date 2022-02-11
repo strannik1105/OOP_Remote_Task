@@ -25,9 +25,19 @@ namespace ConsoleApp
             return array;
         }
 
-        public static void Convert(string number1, int system_base1, string number2, int system_base2)
+        public static int From_N_to_Decimal(string number, int system_base)
         {
+            int decimal_number = 0;
+            for(int i = 0; i < Number_To_Array(number).Length; i++)
+            {
+                decimal_number += Number_To_Array(number)[i] * (int)Math.Pow(system_base, (Number_To_Array(number).Length - i - 1));
+            }
+            return decimal_number;
+        }
 
+        public static void Convert(string number1, int system_base1, int system_base2)
+        {
+            
         }
     }
 }
