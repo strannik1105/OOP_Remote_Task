@@ -51,7 +51,7 @@ namespace WindowsFormsApp
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(947, 299);
+            this.panel1.Size = new System.Drawing.Size(947, 392);
             this.panel1.TabIndex = 0;
             // 
             // panel2
@@ -60,7 +60,7 @@ namespace WindowsFormsApp
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.numericUpDown2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 404);
+            this.panel2.Location = new System.Drawing.Point(0, 504);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(947, 130);
             this.panel2.TabIndex = 1;
@@ -71,22 +71,20 @@ namespace WindowsFormsApp
             this.panel3.Controls.Add(this.textBox1);
             this.panel3.Controls.Add(this.numericUpDown1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 299);
+            this.panel3.Location = new System.Drawing.Point(0, 392);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(947, 105);
+            this.panel3.Size = new System.Drawing.Size(947, 112);
             this.panel3.TabIndex = 2;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(923, 268);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(923, 330);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // numericUpDown1
@@ -155,7 +153,7 @@ namespace WindowsFormsApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 534);
+            this.ClientSize = new System.Drawing.Size(947, 634);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
